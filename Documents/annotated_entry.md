@@ -50,7 +50,24 @@ to set itself apart from other apps. Another thing that helps the app do this is
 trackable dumbbells and eventually barbells. Not many apps use this and I think this is very useful 
 for beginners if you are trying to help new people to get into lifting.
 
+[Java Programming][5] Java was the official language of app development. Many of the apps
+that are in the Play Store are built in Java and Java is also the most supported language by
+Google. Java is a object-oriented and class-based programming language, OOP is a model that
+organizes software design around data, or objects, rather than functions and logic. Java is one of
+many different languages that could be used in terms of App Development considering that there are
+multiple languages out, it is just the most commonly used language at this time.
+
+[Kotlin][6] Kotlin is the other widely used programming language for app development, it is a
+statically typed programming language and it is completely interoperable with the Java programming
+language. Some differences from Java to Kotlin  is that Kotlin removes the superfluous features
+of Java such as null pointer exceptions. It also removes the necessity of ending every line
+with a semicolon. Kotlin is also object-oriented programming, but it also has the advantages of
+functional object-oriented programming which is based around representing some parts of code as
+objects.
+
 [1]: https://fitnessdrum.com/alpha-progression-app-review/ 
 [2]: https://powerliftingtechnique.com/ph3-powerlifting-program-review/
 [3]: https://www.strong.app/#features
 [4]: https://fitnessdrum.com/best-weightlifting-apps/#Stronglifts_55_-_Best_for_Compound_Lifts
+[5]: https://www.javatpoint.com/java-apps
+[6]: https://kotlinlang.org/
