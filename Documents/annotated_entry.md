@@ -7,9 +7,10 @@ workout plans and save custom lifts.
 2. What I like about this app is that a user is able to create customs workout plans that could 
 work better for your own personal goals. The downside to that is if you want to workout for a 
 goal and don't know how to program it this app would not work. This apps A.I. is used to generate
-more bodybuilding workouts over anything else. I am hoping to create an app that would cater to 
-more lifting options. I do like how this app uses A.I. generation in terms of creating workouts for
-users based on equipment that they have available. 
+more bodybuilding workouts over anything else. A.I. generation is something that I would like to 
+try and think about more and possibly add to my own app. I am hoping to create an app that would
+cater to more lifting options. I do like how this app uses A.I. generation in terms of creating 
+workouts for users based on equipment that they have available. 
 
 [PH3 Powerlifting][2] This is a main source app overview from PH3 PowerLifting. They go into detail
 on who the app was designed for and why beginner lifters might not want to use the app.
@@ -20,7 +21,8 @@ having a super easy app to use and it works for the intended audience.
 2. What I like most about this app is that it is simple to use for the user and it is straight 
 forward on the lifts that people can use for it. It make sense that the app would already have
 straight forward lifting schedules. It is straight to the point and they know how to program for 
-the people that they want using the app.
+the people that they want using the app. The app is also said to not have very many glitches in the 
+coding, since the app is straight forward it runs smoothly and has less glitches.
 
 [Strong][3] This is a main source app overview talking about some features the strong app uses.
 They talk about some key features that their app has that some other tracking apps do not have. 
@@ -31,7 +33,10 @@ help you with the lift you are hitting that day.
 2. I like how this app is more free to use and that you would be able to write notes about your
 lifts that you hit that day and how you might want to improve on or different things to do better 
 the next day. The helpful tips that the app gives use is also something that is very unique. I have 
-never seen an app that gives you these tips for form and other things. 
+never seen an app that gives you these tips for form and other things. Adding tips into the app
+could be a great idea when thinking about coding my own app since I am trying to cater to all
+lifters in general. The tips and tricks could appeal to many newcomers and encourage them to stay 
+with the app.
 
 [Tempo Move][4] This is a secondary source app review that talks about features that the app has 
 and how the app would be the best for a user to use. 
@@ -43,7 +48,7 @@ movements, helping to provide advice and insights on your workouts.
 to help improve form and ways to lift better. I really think that is a great addition for this app
 to set itself apart from other apps. Another thing that helps the app do this is because they use 
 trackable dumbbells and eventually barbells. Not many apps use this and I think this is very useful 
-for beginners if you are trying to help new people to get into lifting. 
+for beginners if you are trying to help new people to get into lifting.
 
 [1]: https://fitnessdrum.com/alpha-progression-app-review/ 
 [2]: https://powerliftingtechnique.com/ph3-powerlifting-program-review/
