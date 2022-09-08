@@ -1,4 +1,4 @@
-[1]  Alpha Progression App. This is a secondary source app review from Fitness Drum. They review 
+[Alpha Progression App][1] This is a secondary source app review from Fitness Drum. They review 
 different lifting apps and explain different features of apps.
 1. The Alpha Progression App is and app that allows the user to track their lifting progression 
 through a certain time period that they choose. The app uses A.I. to generate workout plans, 
@@ -11,7 +11,7 @@ more bodybuilding workouts over anything else. I am hoping to create an app that
 more lifting options. I do like how this app uses A.I. generation in terms of creating workouts for
 users based on equipment that they have available. 
 
-[2] PH3 Powerlifting. This is a main source app overview from PH3 PowerLifting. They go into detail
+[PH3 Powerlifting][2] This is a main source app overview from PH3 PowerLifting. They go into detail
 on who the app was designed for and why beginner lifters might not want to use the app.
 1. This app is set for a 13 week lifting cycle that gives you specific workouts and goals to gain
 strength. Nothing is A.I. generated the workouts are set in stone and use lifting percentages to 
@@ -22,7 +22,7 @@ forward on the lifts that people can use for it. It make sense that the app woul
 straight forward lifting schedules. It is straight to the point and they know how to program for 
 the people that they want using the app.
 
-[3] Strong. This is a main source app overview talking about some features the strong app uses.
+[Strong][3] This is a main source app overview talking about some features the strong app uses.
 They talk about some key features that their app has that some other tracking apps do not have. 
 1. The app allows for people to keep track of their best sets, max 1RM, body fat percentage and
 more. The app is somewhat like a notebook, it allows you to make notes about your lifts and what 
@@ -33,7 +33,7 @@ lifts that you hit that day and how you might want to improve on or different th
 the next day. The helpful tips that the app gives use is also something that is very unique. I have 
 never seen an app that gives you these tips for form and other things. 
 
-[4] Tempo Move. This is a secondary source app review that talks about features that the app has 
+[Tempo Move][4] This is a secondary source app review that talks about features that the app has 
 and how the app would be the best for a user to use. 
 1. Tempo Move is an app that comes with trackable dumbbells and they are also going to have
 trackable barbells. The app also has a massive library of on-demand and live workouts for the user 
