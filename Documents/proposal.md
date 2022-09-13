@@ -20,4 +20,4 @@ workout so they would be able to make more progress. I also want to add a featur
 of the app you choose the path you desire and you also put your max weights for some of the main 
 lifts. This will allow the app to show the user what weight they should use during the lifting 
 sessions to insure progress. Based on what lifting journey the user uses the app will give them 
-monthly workouts they can use for however long they wold like. 
+monthly workouts they can use for however long they would like. 
