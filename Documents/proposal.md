@@ -9,18 +9,40 @@ lifting path that they want to follow like powerlifting, crossfit, weight loss, 
 
 **Main Features:**
 
-When researching other weightlifting apps I came across a feature that was used by one app that I 
-really want to include in my app. That is adding helpful tips besides the lift the user is doing at 
-that time to help them maintain and keep good form throughout the entire lifting motion. This will 
-be especially helpful to lifters that are just beginning their weight training and will lower the 
-chances of them getting hurt during a lift. A feature that almost comes with every lifting app is 
-the ability to track your progress as much as you would like. This is a feature that I would also 
-like to add in with my app, I like the idea that users will be able to track what they do for each 
-workout so they would be able to make more progress. I also want to add a feature that at the start 
-of the app you choose the path you desire and you also put your max weights for some of the main 
-lifts. This will allow the app to show the user what weight they should use during the lifting 
-sessions to insure progress. Based on what lifting journey the user uses the app will give them 
-monthly workouts they can use for however long they would like. 
+Here are some main features that I would like to include with the creation of my app.
+
+1. Helpful tips on explaining how to perform a lift
+2. Weight tracking ability
+3. Choose your desired path
+4. Entering maxes at beginning
+5. Multiple lifting options
+
+The helpful tips will be used to help users maintain and keep good form throughout the entire 
+lifting motion. This will be especially helpful to lifters that are just beginning their weight 
+training and will lower the chances of them getting hurt during a lift. This is something that I 
+wish I had when I started to lift weights as it would have allowed me to perfect my form easier 
+and would have benefited me in the beginning stages.
+
+A feature that almost comes with every lifting app is the ability to track your progress as much 
+as you would like. This is one of the best features that can come with any app like this because 
+it is nice to look back on previous lifts and see what weight you did for those. From personal 
+experience this is the easiest way to make sure that you are making progress towards your goals 
+and make sure you are doing the correct weight.
+
+At the start of this app you will get to choose the path you desire. I hope to have different 
+options like powerlifting, crossfit, bulking, cutting and others. This is a unique part of my 
+app that many other apps do not have. Other apps tend to cater to just one style of lifting. 
+I want my app to be used by all lifters no matter their goals.
+
+When you choose the path you want to take with this ap, I also want to have the user put in past 
+maxes before they are given the program. This will help calculate percentages for weight they 
+should be lifting for the different workouts they are given. This will help the workout be more 
+effective and specific for each user.
+
+When I talk about multiple lifting options I mean by what kind of workouts you do each week. 
+Many lifting apps will have the user hit the same style lifts every single week, this becomes very 
+boring and repetitive. From personal experience the repetition does not make people want to go to 
+the gym and improve their goals, it is always nice to mix things up.
 
 **Similar Solutions:**
 
