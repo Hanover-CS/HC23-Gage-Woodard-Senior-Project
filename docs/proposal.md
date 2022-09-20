@@ -1,5 +1,3 @@
-# Super Gorilla Weightlifting
-
 **Project Idea:**
 
 This app will be created with the vision that anybody that wants to lift will be able to use this 
