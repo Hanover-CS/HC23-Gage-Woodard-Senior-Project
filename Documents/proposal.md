@@ -105,4 +105,4 @@ accordingly to improve.
 [3]: https://www.strong.app/#features
 [4]: https://fitnessdrum.com/best-weightlifting-apps/#Stronglifts_55_-_Best_for_Compound_Lifts
 [5]: https://www.reddit.com/r/powerlifting/comments/vp5uqg/ph3_program_review_2022/
-[6]: https://getgymfit.com.au/strong-app-review/#:~:text=Strong%20is%20a%20cheap%20and%20simple%20workout%20tracker,users%20stay%20on%20top%20of%20their%20fitness%20journey.
+[6]: https://getgymfit.com.au/strong-app-review/
