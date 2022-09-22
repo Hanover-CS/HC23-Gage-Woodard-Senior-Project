@@ -1,11 +1,11 @@
-**Project Idea:**
+**Project Idea**
 
 This app will be created with the vision that anybody that wants to lift will be able to use this 
 app. I want this app to cater to beginner lifters all the way through to advanced lifters. I hope 
 to make the app easy to use and reliable for the users. The app will allow users to choose the 
 lifting path that they want to follow like powerlifting, crossfit, weight loss, etc.
 
-**Main Features:**
+**Main Features**
 
 Here are some main features that I would like to include with the creation of my app.
 
@@ -42,7 +42,7 @@ Many lifting apps will have the user hit the same style lifts every single week,
 boring and repetitive. From personal experience the repetition does not make people want to go to 
 the gym and improve their goals, it is always nice to mix things up.
 
-**Similar Solutions:**
+**Similar Solutions**
 
 Here are some similar apps that I have found when researching about weightlifting apps.
 
@@ -96,6 +96,15 @@ lifters and would eliminate possible injuries that could arise. Having trackable
 barbells would benefit my app if I was able to make it that way because it would allow beginners 
 or lifters trying to compete track and see how they are moving their lifts and they could plan 
 accordingly to improve.
+
+**References**
+
+https://powerliftingtechnique.com/ph3-powerlifting-program-review/
+https://fitnessdrum.com/alpha-progression-app-review/
+https://www.strong.app/#features
+https://fitnessdrum.com/best-weightlifting-apps/#Stronglifts_55_-_Best_for_Compound_Lifts
+https://www.reddit.com/r/powerlifting/comments/vp5uqg/ph3_program_review_2022/
+https://getgymfit.com.au/strong-app-review/
 
 
 [1]: https://powerliftingtechnique.com/ph3-powerlifting-program-review/
