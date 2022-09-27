@@ -104,12 +104,6 @@ accordingly to improve.
 
 **References**
 
-https://powerliftingtechnique.com/ph3-powerlifting-program-review/
-https://fitnessdrum.com/alpha-progression-app-review/
-https://www.strong.app/#features
-https://fitnessdrum.com/best-weightlifting-apps/#Stronglifts_55_-_Best_for_Compound_Lifts
-https://www.reddit.com/r/powerlifting/comments/vp5uqg/ph3_program_review_2022/
-https://getgymfit.com.au/strong-app-review/
 
 [1]: https://powerliftingtechnique.com/ph3-powerlifting-program-review/
 [2]: https://fitnessdrum.com/alpha-progression-app-review/
