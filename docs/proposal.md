@@ -102,6 +102,53 @@ barbells would benefit my app if I were able to make it that way because it woul
 or lifters trying to compete track and see how they are moving their lifts and they could plan 
 accordingly to improve.
 
+**Relevant Technologies**
+
+This is a list of languages that can be used when programming for mobile applications.
+
+1. [Java][7]
+2. [Kotlin][8]
+3. [React Native][9]
+4. [Flutter][10]
+5. [C++][11]
+
+Java was the official language of app development. Many of the apps that are in the Play Store are
+built in Java and Java is also the most supported language by Google. Java is an object-oriented and
+class-based programming language, OOP is a model that organizes software design around data, or 
+objects, rather than functions and logic. Java is one of many different languages that could be used
+in terms of App Development considering that there are multiple languages out, it is just the most 
+used language at this time.
+
+Kotlin is the other widely used programming language for app development, it is a statically typed 
+programming language, and it is completely interoperable with the Java programming language. Some 
+differences from Java to Kotlin is that Kotlin removes the superfluous features of Java such as null
+pointer exceptions. It also removes the necessity of ending every line with a semicolon. Kotlin is 
+also object-oriented programming, but it also has the advantages of functional object-oriented 
+programming which is based around representing some parts of code as objects.
+
+React Native is a cross platform coding language that can be used for IOS applications and Android 
+applications. React Native is based on JavaScript which is the most popular front-end programming 
+language. React Native can use third-party plugins and packages to enhance the capabilities of the 
+applications. Also, many open-source JavaScript libraries found on NPM can be used when using React 
+Native. React Native does not need a compiler and it lets developers detect and solve errors quickly. 
+These are some keys as to why many apps like Facebook and Instagram use React Native.
+
+Flutter is an open-source UI development kit from Google for the development of natively compiled 
+applications and is a cross platform coding language that can be used for IOS and Android apps. 
+Flutter uses a combined collection of Dart programming language, Flutter engine, and Foundation
+library. Flutter allows changes to source code to be reflected onto running applications, without 
+losing state or restarting. That is why this engine is being used by companies like Google and BMW. 
+Flutter also has access to the Foundation Library which is written in Dart, it provides many 
+fundamental functions and classes that are used for building Flutter applications.
+
+C++ is an android native programming language when it comes to building applications. 
+The programming language is typically practiced for graphics-heavy applications which explains why 
+it would be used by companies like YouTube and Adobe Photoshop. C++ is a structured programming 
+language where coders can divide the application into distinct sections according to their roles. 
+C++ uses a compiler which are utility programs that take your code and transform it into executable 
+machine code files. The compiler contributes to the execution speed of this language compared to 
+other languages.
+
 **References**
 
 
@@ -111,3 +158,6 @@ accordingly to improve.
 [4]: https://fitnessdrum.com/best-weightlifting-apps/#Stronglifts_55_-_Best_for_Compound_Lifts
 [5]: https://www.reddit.com/r/powerlifting/comments/vp5uqg/ph3_program_review_2022/
 [6]: https://getgymfit.com.au/strong-app-review/
+[7]: https://www.javatpoint.com/java-apps
+[8]: https://kotlinlang.org/
+[9]: https://code.tutsplus.com/tutorials/what-is-react-native--cms-38028
