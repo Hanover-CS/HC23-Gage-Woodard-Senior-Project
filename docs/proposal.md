@@ -52,10 +52,10 @@ the gym and improve their goals, it is always nice to mix things up.
 
 Here are some similar apps that I have found when researching about weightlifting apps.
 
-1. [PH3 Powerlifting][1]
-2. [Alpha Progression App][2]
-3. [Strong][3]
-4. [Tempo Move][4]
+1. [PH3 Powerlifting][1]{1}
+2. [Alpha Progression App][2]{2}
+3. [Strong][3]{3}
+4. [Tempo Move][4]{4}
 
 The PH3 Powerlifting app is used by many power lifters that would like to compete in competitions 
 or by lifters that are looking to solely get stronger. This app is set for a 13-week lifting cycle 
@@ -65,7 +65,7 @@ I want my app to be used by all and for the app to have many different lifting o
 from. What I like most about this app is the simplicity behind it and that it barely runs with any 
 glitches connected with it. Having a smooth-running app is something I will be shooting for when 
 creating my app because that is what users want and I personally would not want my app to glitch 
-and erase all my data. This [article][5] talks about a personal perspective of the app and how it 
+and erase all my data. This [article][5]{5} talks about a personal perspective of the app and how it 
 works.
 
 The Alpha Progression App is and app that allows the user to track their lifting progression 
@@ -85,7 +85,7 @@ it allows you to make notes about your lifts and what happens with your weight y
 version of what I would like to do with my app, I would like my app to allow the users to track and
 write what they did for each set. The strong app is more open in terms of the lifting experience but
 being able to make notes for your lifts and how they went is a unique style that I have seen from 
-other lifting apps, and it is something I want to look more into. The [GetGymFit][6] website talks 
+other lifting apps, and it is something I want to look more into. The [GetGymFit][6]{6} website talks 
 about some reviews of this app and what people think more about it.
 
 Tempo Move is a very advanced workout app when it comes to tracking your weight and being able to 
@@ -106,11 +106,11 @@ accordingly to improve.
 
 This is a list of languages that can be used when programming for mobile applications.
 
-1. [Java][7]
-2. [Kotlin][8]
-3. [React Native][9]
-4. [Flutter][10]
-5. [C++][11]
+1. [Java][7]{7}
+2. [Kotlin][8]{8}
+3. [React Native][9]{9}
+4. [Flutter][10]{10}
+5. [C++][11]{11}
 
 Java was the official language of app development. Many of the apps that are in the Play Store are
 built in Java and Java is also the most supported language by Google. Java is an object-oriented and
@@ -151,6 +151,17 @@ other languages.
 
 **References**
 
+1. https://powerliftingtechnique.com/ph3-powerlifting-program-review/
+2. https://fitnessdrum.com/alpha-progression-app-review/
+3. https://www.strong.app/#features
+4. https://fitnessdrum.com/best-weightlifting-apps/#Stronglifts_55_-_Best_for_Compound_Lifts
+5. https://www.reddit.com/r/powerlifting/comments/vp5uqg/ph3_program_review_2022/
+6. https://getgymfit.com.au/strong-app-review/
+7. https://www.javatpoint.com/java-apps
+8. https://kotlinlang.org/
+9. https://code.tutsplus.com/tutorials/what-is-react-native--cms-38028
+10. https://flutter.dev/
+11. https://www.geeksforgeeks.org/introduction-to-c-programming-language/
 
 [1]: https://powerliftingtechnique.com/ph3-powerlifting-program-review/
 [2]: https://fitnessdrum.com/alpha-progression-app-review/
