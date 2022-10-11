@@ -15,4 +15,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/second_screen_button"
+        android:layout_width="91dp"
+        android:layout_height="48dp"
+        android:text="Next"
+        tools:layout_editor_absoluteX="304dp"
+        tools:layout_editor_absoluteY="652dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
