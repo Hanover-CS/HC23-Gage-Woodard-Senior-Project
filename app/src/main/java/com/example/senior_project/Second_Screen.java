@@ -9,15 +9,21 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Second_Screen extends AppCompatActivity implements View.OnClickListener {
 
-    Button third_screen, home_screen;
+    Button home_screen, power_lifting;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
-        third_screen = findViewById(R.id.third_screen_button);
-        third_screen.setOnClickListener(this);
+        power_lifting = findViewById(R.id.power_lifting_screen);
+        power_lifting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Second_Screen.this, Third_Screen.class);
+                startActivity(intent);
+            }
+        });
 
         home_screen = findViewById(R.id.home_screen_button);
         home_screen.setOnClickListener(new View.OnClickListener() {
@@ -31,7 +37,6 @@ public class Second_Screen extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View view) {
-        Intent intent = new Intent(Second_Screen.this, Third_Screen.class);
-        startActivity(intent);
+
     }
 }
