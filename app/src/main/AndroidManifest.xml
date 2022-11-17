@@ -39,7 +39,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Fourth_Screen"
+            android:name=".LowerBodyWorkout"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

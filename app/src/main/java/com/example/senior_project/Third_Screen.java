@@ -16,6 +16,7 @@ public class Third_Screen extends AppCompatActivity implements View.OnClickListe
     private EditText dayText, lift1Text, lift2Text, lift3Text, lift4Text, lift5Text;
     private Button enterLift, viewLift, deleteLift, backChooseScreen, nextLiftPage;
     private DBHelper dbHelper;
+    public AlertDialog.Builder alertDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,11 +77,11 @@ public class Third_Screen extends AppCompatActivity implements View.OnClickListe
                     buffer.append("Shrugs :"+" "+liftResult.getString(5)+"\n");
                     buffer.append("Curl :"+" "+liftResult.getString(6)+"\n\n");
                 }
-                AlertDialog.Builder builder = new AlertDialog.Builder(Third_Screen.this);
-                builder.setCancelable(true);
-                builder.setTitle("Previous Lifts");
-                builder.setMessage(buffer.toString());
-                builder.show();
+                alertDialog = new AlertDialog.Builder(Third_Screen.this);
+                alertDialog.setCancelable(true);
+                alertDialog.setTitle("Previous Lifts");
+                alertDialog.setMessage(buffer.toString());
+                alertDialog.show();
             }
         });
 
@@ -106,7 +107,7 @@ public class Third_Screen extends AppCompatActivity implements View.OnClickListe
         nextLiftPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Third_Screen.this, Fourth_Screen.class);
+                Intent intent = new Intent(Third_Screen.this, LowerBodyWorkout.class);
                 startActivity(intent);
             }
         });
