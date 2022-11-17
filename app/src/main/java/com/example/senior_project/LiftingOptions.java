@@ -7,20 +7,20 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Second_Screen extends AppCompatActivity implements View.OnClickListener {
+public class LiftingOptions extends AppCompatActivity implements View.OnClickListener {
 
     Button home_screen, power_lifting;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_second);
+        setContentView(R.layout.activity_options);
 
         power_lifting = findViewById(R.id.power_lifting_screen);
         power_lifting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Second_Screen.this, Third_Screen.class);
+                Intent intent = new Intent(LiftingOptions.this, UpperBodyWorkout.class);
                 startActivity(intent);
             }
         });
@@ -29,7 +29,7 @@ public class Second_Screen extends AppCompatActivity implements View.OnClickList
         home_screen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Second_Screen.this, MainActivity.class);
+                Intent intent = new Intent(LiftingOptions.this, MainActivity.class);
                 startActivity(intent);
             }
         });

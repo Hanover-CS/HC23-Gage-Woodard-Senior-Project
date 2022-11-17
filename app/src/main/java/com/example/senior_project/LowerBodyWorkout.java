@@ -64,7 +64,7 @@ public class LowerBodyWorkout extends AppCompatActivity implements View.OnClickL
         backScreen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LowerBodyWorkout.this, Third_Screen.class);
+                Intent intent = new Intent(LowerBodyWorkout.this, UpperBodyWorkout.class);
                 startActivity(intent);
             }
         });

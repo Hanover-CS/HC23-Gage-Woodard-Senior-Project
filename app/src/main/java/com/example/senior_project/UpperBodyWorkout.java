@@ -11,7 +11,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Third_Screen extends AppCompatActivity implements View.OnClickListener {
+public class UpperBodyWorkout extends AppCompatActivity implements View.OnClickListener {
 
     private EditText dayText, lift1Text, lift2Text, lift3Text, lift4Text, lift5Text;
     private Button enterLift, viewLift, deleteLift, backChooseScreen, nextLiftPage;
@@ -21,7 +21,7 @@ public class Third_Screen extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_third);
+        setContentView(R.layout.activity_upper);
 
         dayText = findViewById(R.id.insertDay);
         lift1Text = findViewById(R.id.insertLift1);
@@ -36,7 +36,7 @@ public class Third_Screen extends AppCompatActivity implements View.OnClickListe
         backChooseScreen = findViewById(R.id.choose_screen);
         nextLiftPage = findViewById(R.id.btnNextWorkout1);
 
-        dbHelper = new DBHelper(Third_Screen.this);
+        dbHelper = new DBHelper(UpperBodyWorkout.this);
 
         enterLift.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,7 +50,7 @@ public class Third_Screen extends AppCompatActivity implements View.OnClickListe
 
                 dbHelper.addNewLift(day, lift_1, lift_2, lift_3, lift_4, lift_5);
 
-                Toast.makeText(Third_Screen.this, "Lift Added!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(UpperBodyWorkout.this, "Lift Added!", Toast.LENGTH_SHORT).show();
                 dayText.setText("");
                 lift1Text.setText("");
                 lift2Text.setText("");
@@ -77,7 +77,7 @@ public class Third_Screen extends AppCompatActivity implements View.OnClickListe
                     buffer.append("Shrugs :"+" "+liftResult.getString(5)+"\n");
                     buffer.append("Curl :"+" "+liftResult.getString(6)+"\n\n");
                 }
-                alertDialog = new AlertDialog.Builder(Third_Screen.this);
+                alertDialog = new AlertDialog.Builder(UpperBodyWorkout.this);
                 alertDialog.setCancelable(true);
                 alertDialog.setTitle("Previous Lifts");
                 alertDialog.setMessage(buffer.toString());
@@ -91,7 +91,7 @@ public class Third_Screen extends AppCompatActivity implements View.OnClickListe
                 String liftDelete = dayText.getText().toString();
                 dbHelper.deleteLift(liftDelete);
 
-                Toast.makeText(Third_Screen.this, "Lift Deleted!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(UpperBodyWorkout.this, "Lift Deleted!", Toast.LENGTH_SHORT).show();
                 dayText.setText("");
             }
         });
@@ -99,7 +99,7 @@ public class Third_Screen extends AppCompatActivity implements View.OnClickListe
         backChooseScreen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Third_Screen.this, Second_Screen.class);
+                Intent intent = new Intent(UpperBodyWorkout.this, LiftingOptions.class);
                 startActivity(intent);
             }
         });
@@ -107,7 +107,7 @@ public class Third_Screen extends AppCompatActivity implements View.OnClickListe
         nextLiftPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Third_Screen.this, LowerBodyWorkout.class);
+                Intent intent = new Intent(UpperBodyWorkout.this, LowerBodyWorkout.class);
                 startActivity(intent);
             }
         });
