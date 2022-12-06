@@ -1,3 +1,16 @@
+/**
+ * <summary> This class allows users to enter, view, and delete lifts that they record.
+ *     <para>
+ *         Enter button currently does not work.
+ *         View button currently does not work.
+ *         Delete button currently does not work.
+ *         Back button takes you back to the previous lift.
+ *         Next button currently does not work.
+ *     </para>
+ * </summary>
+ */
+
+
 package com.example.senior_project;
 
 import android.content.Intent;
