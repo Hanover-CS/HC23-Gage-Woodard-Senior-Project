@@ -23,40 +23,17 @@ public class UpperBodyWorkout extends AppCompatActivity implements View.OnClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_upper);
 
-        dayText = findViewById(R.id.insertDay);
-        lift1Text = findViewById(R.id.insertLift1);
-        lift2Text = findViewById(R.id.insertLift2);
-        lift3Text = findViewById(R.id.insertLift3);
-        lift4Text = findViewById(R.id.insertLift4);
-        lift5Text = findViewById(R.id.insertLift5);
-
-        enterLift = findViewById(R.id.btnEnter);
-        viewLift = findViewById(R.id.btnView);
-        deleteLift = findViewById(R.id.btnDelete);
-        backChooseScreen = findViewById(R.id.choose_screen);
-        nextLiftPage = findViewById(R.id.btnNextWorkout1);
+        getUserInput();
+        getButtonID();
 
         dbHelper = new DBHelper(UpperBodyWorkout.this);
 
         enterLift.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String day = dayText.getText().toString();
-                String lift_1 = lift1Text.getText().toString();
-                String lift_2 = lift2Text.getText().toString();
-                String lift_3 = lift3Text.getText().toString();
-                String lift_4 = lift4Text.getText().toString();
-                String lift_5 = lift5Text.getText().toString();
-
-                dbHelper.addNewLift(day, lift_1, lift_2, lift_3, lift_4, lift_5);
-
+                addNewLiftToDBHelper();
                 Toast.makeText(UpperBodyWorkout.this, "Lift Added!", Toast.LENGTH_SHORT).show();
-                dayText.setText("");
-                lift1Text.setText("");
-                lift2Text.setText("");
-                lift3Text.setText("");
-                lift4Text.setText("");
-                lift5Text.setText("");
+                clearText();
 
             }
         });
@@ -70,18 +47,9 @@ public class UpperBodyWorkout extends AppCompatActivity implements View.OnClickL
                 }
                 StringBuffer buffer = new StringBuffer();
                 while (liftResult.moveToNext()) {
-                    buffer.append("Day :"+" "+liftResult.getString(1)+"\n");
-                    buffer.append("Bench :"+" "+liftResult.getString(2)+"\n");
-                    buffer.append("Row :"+" "+liftResult.getString(3)+"\n");
-                    buffer.append("DB Bench :"+" "+liftResult.getString(4)+"\n");
-                    buffer.append("Shrugs :"+" "+liftResult.getString(5)+"\n");
-                    buffer.append("Curl :"+" "+liftResult.getString(6)+"\n\n");
+                    addLiftingData(buffer, liftResult);
                 }
-                alertDialog = new AlertDialog.Builder(UpperBodyWorkout.this);
-                alertDialog.setCancelable(true);
-                alertDialog.setTitle("Previous Lifts");
-                alertDialog.setMessage(buffer.toString());
-                alertDialog.show();
+                showPreviousLifts(buffer);
             }
         });
 
@@ -116,5 +84,58 @@ public class UpperBodyWorkout extends AppCompatActivity implements View.OnClickL
 
     @Override
     public void onClick(View view) {}
+
+    public void getButtonID() {
+        enterLift = findViewById(R.id.btnEnter);
+        viewLift = findViewById(R.id.btnView);
+        deleteLift = findViewById(R.id.btnDelete);
+        backChooseScreen = findViewById(R.id.choose_screen);
+        nextLiftPage = findViewById(R.id.btnNextWorkout1);
+    }
+
+    public void getUserInput() {
+        dayText = findViewById(R.id.insertDay);
+        lift1Text = findViewById(R.id.insertLift1);
+        lift2Text = findViewById(R.id.insertLift2);
+        lift3Text = findViewById(R.id.insertLift3);
+        lift4Text = findViewById(R.id.insertLift4);
+        lift5Text = findViewById(R.id.insertLift5);
+    }
+
+    public void addNewLiftToDBHelper() {
+        String day = dayText.getText().toString();
+        String lift_1 = lift1Text.getText().toString();
+        String lift_2 = lift2Text.getText().toString();
+        String lift_3 = lift3Text.getText().toString();
+        String lift_4 = lift4Text.getText().toString();
+        String lift_5 = lift5Text.getText().toString();
+        dbHelper.addNewLift(day, lift_1, lift_2, lift_3, lift_4, lift_5);
+    }
+
+    public void clearText() {
+        dayText.setText("");
+        lift1Text.setText("");
+        lift2Text.setText("");
+        lift3Text.setText("");
+        lift4Text.setText("");
+        lift5Text.setText("");
+    }
+
+    public void addLiftingData(StringBuffer buffer, Cursor liftResult) {
+        buffer.append("Day :"+" "+liftResult.getString(1)+"\n");
+        buffer.append("Bench :"+" "+liftResult.getString(2)+"\n");
+        buffer.append("Row :"+" "+liftResult.getString(3)+"\n");
+        buffer.append("DB Bench :"+" "+liftResult.getString(4)+"\n");
+        buffer.append("Shrugs :"+" "+liftResult.getString(5)+"\n");
+        buffer.append("Curl :"+" "+liftResult.getString(6)+"\n\n");
+    }
+
+    public void showPreviousLifts(StringBuffer buffer) {
+        alertDialog = new AlertDialog.Builder(UpperBodyWorkout.this);
+        alertDialog.setCancelable(true);
+        alertDialog.setTitle("Previous Lifts");
+        alertDialog.setMessage(buffer.toString());
+        alertDialog.show();
+    }
 
 }
