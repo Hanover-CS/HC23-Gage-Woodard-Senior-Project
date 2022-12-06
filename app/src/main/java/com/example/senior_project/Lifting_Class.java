@@ -1,3 +1,13 @@
+/**
+ * <summary> This class has getters and setters for the lifts, sets, and reps.
+ *     <para>
+ *         Contains a Lifting_Class constructor.
+ *         Implements getters and setters for lifts, num_sets, and num_reps.
+ *     </para>
+ * </summary>
+ */
+
+
 package com.example.senior_project;
 
 public class Lifting_Class {
