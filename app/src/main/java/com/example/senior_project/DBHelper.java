@@ -1,3 +1,14 @@
+/**
+ * <summary> This class creates the DataBase table we need to store user data.
+ *     <para>
+ *         addNewLift function allows for user input into table.
+ *         getLiftingData allows for us to view lifts from lifting screens.
+ *         deleteLift searches for the day entered and deletes it from DB if it is there.
+ *     </para>
+ * </summary>
+ */
+
+
 package com.example.senior_project;
 
 import android.content.ContentValues;
