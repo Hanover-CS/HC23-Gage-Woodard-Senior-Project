@@ -1,3 +1,16 @@
+/**
+ * <summary> This class allows users to enter, view, and delete lifts that they record.
+ *     <para>
+ *         Enter button allows for the data for each lift to be put into database.
+ *         View button shows a screen of all lifts currently in database.
+ *         Delete button will delete a lift based on the day you put in.
+ *         Back button takes you back to the lifting options.
+ *         Next button takes you to your next lift.
+ *     </para>
+ * </summary>
+ */
+
+
 package com.example.senior_project;
 
 import android.content.Intent;
