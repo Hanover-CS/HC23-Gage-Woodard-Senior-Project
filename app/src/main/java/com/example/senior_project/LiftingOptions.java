@@ -29,7 +29,7 @@ public class LiftingOptions extends AppCompatActivity implements View.OnClickLis
         home_screen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LiftingOptions.this, MainActivity.class);
+                Intent intent = new Intent(LiftingOptions.this, MainScreen.class);
                 startActivity(intent);
             }
         });

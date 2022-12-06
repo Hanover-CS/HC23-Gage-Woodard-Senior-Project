@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/red"
-    tools:context=".MainActivity">
+    tools:context=".MainScreen">
 
     <Button
         android:id="@+id/second_screen_button"
@@ -38,8 +38,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="261dp"
-        android:layout_height="292dp"
+        android:layout_width="238dp"
+        android:layout_height="235dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
