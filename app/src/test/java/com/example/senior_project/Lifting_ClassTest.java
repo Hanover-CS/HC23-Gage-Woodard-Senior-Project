@@ -1,3 +1,12 @@
+/**
+ * <summary> This class tests Lifting_Class.
+ *     <para>
+ *         All tests run and pass.
+ *     </para>
+ * </summary>
+ */
+
+
 package com.example.senior_project;
 
 import org.junit.Test;
