@@ -1,3 +1,13 @@
+/**
+ * <summary> This screen gives users different lifting options to choose from.
+ *      <para>
+ *          This screen has three different lifting buttons to choose from.
+ *          Currently only the powerlifting button advances you to a new screen.
+ *          Other buttons currently do not work.
+ *      </para>
+ * </summary>
+ */
+
 package com.example.senior_project;
 
 import android.content.Intent;
