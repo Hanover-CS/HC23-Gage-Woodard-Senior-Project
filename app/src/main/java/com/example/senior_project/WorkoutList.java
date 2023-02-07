@@ -25,6 +25,8 @@ public class WorkoutList extends AppCompatActivity {
     DBHelper db;
     MyAdapter adapter;
 
+    // recyclerView is created and layout is set for when we move to next screen to
+    // display our data to the user
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +47,7 @@ public class WorkoutList extends AppCompatActivity {
         
     }
 
+    // uses the cursor to move to next to populate and displayData
     private void displayData() {
         Cursor cursor = db.getLiftingData();
         while (cursor.moveToNext()) {

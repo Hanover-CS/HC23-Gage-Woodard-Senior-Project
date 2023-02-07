@@ -33,17 +33,20 @@ public class UpperBodyWorkout extends AppCompatActivity implements View.OnClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_upper);
 
+        // getting the user input and button id's for the screen
         getUserInput();
         getButtonID();
 
         dbHelper = new DBHelper(this);
 
+        // creating the spinner dropdown menu to show current workout for the day
         Spinner dropdown = findViewById(R.id.spinner);
         String[] items = new String[]{"Bench: 3x5", "BB Row: 3x5", "DB Bench: 3x5", "DB Shrugs: 3x5", "DB Curls: 3x5"};
         ArrayAdapter<String> adpt = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, items);
         dropdown.setAdapter(adpt);
 
 
+        // adds the new lift to the DB when clicking button
         enterLift.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -53,6 +56,7 @@ public class UpperBodyWorkout extends AppCompatActivity implements View.OnClickL
             }
         });
 
+        // starts the recyclerView in the workoutList to display our data
         viewLift.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -61,6 +65,7 @@ public class UpperBodyWorkout extends AppCompatActivity implements View.OnClickL
             }
         });
 
+        // gets the day entered from user to allow us to delete workouts if they are in DB
         deleteLift.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -70,6 +75,7 @@ public class UpperBodyWorkout extends AppCompatActivity implements View.OnClickL
             }
         });
 
+        // takes us back to the options menu
         backChooseScreen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -78,6 +84,7 @@ public class UpperBodyWorkout extends AppCompatActivity implements View.OnClickL
             }
         });
 
+        // takes us to the next workout
         nextLiftPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

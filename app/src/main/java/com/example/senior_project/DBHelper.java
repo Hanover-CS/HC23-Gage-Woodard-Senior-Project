@@ -22,7 +22,6 @@ public class DBHelper extends SQLiteOpenHelper {
     private static final String DB_Name = "userData.db";
     private static final int DB_Version = 1;
     private static final String Table_Name = "Previous_Lifts";
-
     private static final String ID_COL = "id";
     private static final String Day_COL = "day";
     private static final String Lift_1_COL = "lift_1";
@@ -54,6 +53,7 @@ public class DBHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
+    // this is where the user inputs will get put when the user enters the data
     public void addNewLift(String day, String lift1, String lift2, String lift3, String lift4, String lift5) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -69,12 +69,15 @@ public class DBHelper extends SQLiteOpenHelper {
         db.close();
     }
 
+    // gets the lifting data from the query using the cursor
     public Cursor getLiftingData() {
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor cursor = db.rawQuery("SELECT * FROM " + Table_Name, null);
         return cursor;
     }
 
+    // checking the database table for the day entered which is the key
+    // this allows us to delete that data from the day if wanted to
     public void deleteLift(String day_COL) {
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery("SELECT * FROM " + Table_Name, null);

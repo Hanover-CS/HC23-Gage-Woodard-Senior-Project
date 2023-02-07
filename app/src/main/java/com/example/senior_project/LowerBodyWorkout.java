@@ -34,14 +34,17 @@ public class LowerBodyWorkout extends AppCompatActivity implements View.OnClickL
 
         dbHelper = new DBHelper(LowerBodyWorkout.this);
 
+        // getting the user input and button id's for the screen
         getButtonID();
         getUserInput();
 
+        // creating the spinner dropdown menu to show current workout for the day
         Spinner dropdown = findViewById(R.id.spinner);
         String[] items = new String[]{"Squat: 3x5", "DeadLift: 3x5", "DB RDLs: 3x5", "Leg Extensions: 3x5", "Leg Curls: 3x5"};
         ArrayAdapter<String> adpt = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, items);
         dropdown.setAdapter(adpt);
 
+        // adds the new lift to the DB when clicking button
         enterLift.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -50,6 +53,7 @@ public class LowerBodyWorkout extends AppCompatActivity implements View.OnClickL
             }
         });
 
+        // starts the recyclerView in the workoutList to display our data
         viewLift.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,6 +63,7 @@ public class LowerBodyWorkout extends AppCompatActivity implements View.OnClickL
             }
         });
 
+        // gets the day entered from user to allow us to delete workouts if they are in DB
         deleteLift.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -68,6 +73,7 @@ public class LowerBodyWorkout extends AppCompatActivity implements View.OnClickL
             }
         });
 
+        // takes us back to the first workout screen
         backScreen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

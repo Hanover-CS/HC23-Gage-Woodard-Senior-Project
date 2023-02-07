@@ -25,6 +25,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     private Context context;
     private ArrayList day_id, lift1_id, lift2_id, lift3_id, lift4_id, lift5_id;
 
+    // constructor for the class
     public MyAdapter(Context context, ArrayList day_id, ArrayList lift1_id, ArrayList lift2_id, ArrayList lift3_id, ArrayList lift4_id, ArrayList lift5_id) {
         this.context = context;
         this.day_id = day_id;
@@ -42,6 +43,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         return new MyViewHolder(v);
     }
 
+    // sets the position on how the data is presented when being viewed
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         holder.day_id.setText(String.valueOf(day_id.get(position)));
@@ -57,6 +59,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         return day_id.size();
     }
 
+    // finding the itemView to help use the RecyclerView when checking the data
     public class MyViewHolder extends RecyclerView.ViewHolder {
         TextView day_id, lift1_id, lift2_id, lift3_id, lift4_id, lift5_id;
 
