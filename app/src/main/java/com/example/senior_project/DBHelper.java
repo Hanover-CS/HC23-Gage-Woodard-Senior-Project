@@ -22,6 +22,7 @@ public class DBHelper extends SQLiteOpenHelper {
     private static final String DB_Name = "userData.db";
     private static final int DB_Version = 1;
     private static final String Table_Name = "Previous_Lifts";
+
     private static final String ID_COL = "id";
     private static final String Day_COL = "day";
     private static final String Lift_1_COL = "lift_1";
@@ -45,6 +46,12 @@ public class DBHelper extends SQLiteOpenHelper {
                 + Lift_5_COL + " TEXT)";
 
         db.execSQL(query);
+    }
+
+    @Override
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        db.execSQL("DROP TABLE IF EXISTS " + Table_Name);
+        onCreate(db);
     }
 
     public void addNewLift(String day, String lift1, String lift2, String lift3, String lift4, String lift5) {
@@ -78,12 +85,6 @@ public class DBHelper extends SQLiteOpenHelper {
             }
         } else {
         }
-    }
-
-    @Override
-    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL("DROP TABLE IF EXISTS " + Table_Name);
-        onCreate(db);
     }
 
 }

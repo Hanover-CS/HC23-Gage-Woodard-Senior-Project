@@ -17,8 +17,10 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
@@ -29,7 +31,6 @@ public class LowerBodyWorkout extends AppCompatActivity implements View.OnClickL
     private DBHelper dbHelper;
     private Button enterLift, viewLift, deleteLift, backScreen, nextScreen;
     private EditText dayText, lift1Text, lift2Text, lift3Text, lift4Text, lift5Text;
-    private AlertDialog.Builder builder;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,11 +41,15 @@ public class LowerBodyWorkout extends AppCompatActivity implements View.OnClickL
         getButtonID();
         getUserInput();
 
+        Spinner dropdown = findViewById(R.id.spinner);
+        String[] items = new String[]{"Squat: 3x5", "DeadLift: 3x5", "DB RDLs: 3x5", "Leg Extensions: 3x5", "Leg Curls: 3x5"};
+        ArrayAdapter<String> adpt = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, items);
+        dropdown.setAdapter(adpt);
+
         enterLift.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 addNewLiftToDBHelper();
-                Toast.makeText(LowerBodyWorkout.this, "Lift Added!", Toast.LENGTH_SHORT).show();
                 clearEditText();
             }
         });
@@ -52,15 +57,9 @@ public class LowerBodyWorkout extends AppCompatActivity implements View.OnClickL
         viewLift.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Cursor liftResult = dbHelper.getLiftingData();
-                if(liftResult.getCount() == 0) {
-                    return;
-                }
-                StringBuffer buffer = new StringBuffer();
-                while(liftResult.moveToNext()) {
-                    addLiftingData(buffer, liftResult);
-                }
-                showPreviousLifts(buffer);
+
+                startActivity(new Intent(LowerBodyWorkout.this, WorkoutList.class));
+
             }
         });
 
@@ -69,7 +68,6 @@ public class LowerBodyWorkout extends AppCompatActivity implements View.OnClickL
             public void onClick(View view) {
                 String liftDelete = dayText.getText().toString();
                 dbHelper.deleteLift(liftDelete);
-                Toast.makeText(LowerBodyWorkout.this, "Lift Deleted!", Toast.LENGTH_SHORT).show();
                 clearEditText();
             }
         });
@@ -121,23 +119,6 @@ public class LowerBodyWorkout extends AppCompatActivity implements View.OnClickL
         lift3Text.setText("");
         lift4Text.setText("");
         lift5Text.setText("");
-    }
-
-    public void addLiftingData(StringBuffer buffer, Cursor liftResult) {
-        buffer.append("Day: "+" "+liftResult.getString(1)+"\n");
-        buffer.append("Squat: "+" "+liftResult.getString(2)+"\n");
-        buffer.append("DeadLift: "+" "+liftResult.getString(3)+"\n");
-        buffer.append("RDL: "+" "+liftResult.getString(4)+"\n");
-        buffer.append("Extension: "+" "+liftResult.getString(5)+"\n");
-        buffer.append("Curl: "+" "+liftResult.getString(6)+"\n\n");
-    }
-
-    public void showPreviousLifts(StringBuffer buffer) {
-        builder = new AlertDialog.Builder(LowerBodyWorkout.this);
-        builder.setCancelable(true);
-        builder.setTitle("Previous Lifts");
-        builder.setMessage(buffer.toString());
-        builder.show();
     }
 
 }

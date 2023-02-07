@@ -17,8 +17,10 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
@@ -29,7 +31,6 @@ public class UpperBodyWorkout extends AppCompatActivity implements View.OnClickL
     private EditText dayText, lift1Text, lift2Text, lift3Text, lift4Text, lift5Text;
     private Button enterLift, viewLift, deleteLift, backChooseScreen, nextLiftPage;
     private DBHelper dbHelper;
-    public AlertDialog.Builder alertDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,13 +40,18 @@ public class UpperBodyWorkout extends AppCompatActivity implements View.OnClickL
         getUserInput();
         getButtonID();
 
-        dbHelper = new DBHelper(UpperBodyWorkout.this);
+        dbHelper = new DBHelper(this);
+
+        Spinner dropdown = findViewById(R.id.spinner);
+        String[] items = new String[]{"Bench: 3x5", "BB Row: 3x5", "DB Bench: 3x5", "DB Shrugs: 3x5", "DB Curls: 3x5"};
+        ArrayAdapter<String> adpt = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, items);
+        dropdown.setAdapter(adpt);
+
 
         enterLift.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 addNewLiftToDBHelper();
-                Toast.makeText(UpperBodyWorkout.this, "Lift Added!", Toast.LENGTH_SHORT).show();
                 clearText();
 
             }
@@ -54,15 +60,8 @@ public class UpperBodyWorkout extends AppCompatActivity implements View.OnClickL
         viewLift.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Cursor liftResult = dbHelper.getLiftingData();
-                if(liftResult.getCount() == 0) {
-                    return;
-                }
-                StringBuffer buffer = new StringBuffer();
-                while (liftResult.moveToNext()) {
-                    addLiftingData(buffer, liftResult);
-                }
-                showPreviousLifts(buffer);
+
+                startActivity(new Intent(UpperBodyWorkout.this, WorkoutList.class));
             }
         });
 
@@ -71,8 +70,6 @@ public class UpperBodyWorkout extends AppCompatActivity implements View.OnClickL
             public void onClick(View view) {
                 String liftDelete = dayText.getText().toString();
                 dbHelper.deleteLift(liftDelete);
-
-                Toast.makeText(UpperBodyWorkout.this, "Lift Deleted!", Toast.LENGTH_SHORT).show();
                 dayText.setText("");
             }
         });
@@ -132,23 +129,6 @@ public class UpperBodyWorkout extends AppCompatActivity implements View.OnClickL
         lift3Text.setText("");
         lift4Text.setText("");
         lift5Text.setText("");
-    }
-
-    public void addLiftingData(StringBuffer buffer, Cursor liftResult) {
-        buffer.append("Day :"+" "+liftResult.getString(1)+"\n");
-        buffer.append("Bench :"+" "+liftResult.getString(2)+"\n");
-        buffer.append("Row :"+" "+liftResult.getString(3)+"\n");
-        buffer.append("DB Bench :"+" "+liftResult.getString(4)+"\n");
-        buffer.append("Shrugs :"+" "+liftResult.getString(5)+"\n");
-        buffer.append("Curl :"+" "+liftResult.getString(6)+"\n\n");
-    }
-
-    public void showPreviousLifts(StringBuffer buffer) {
-        alertDialog = new AlertDialog.Builder(UpperBodyWorkout.this);
-        alertDialog.setCancelable(true);
-        alertDialog.setTitle("Previous Lifts");
-        alertDialog.setMessage(buffer.toString());
-        alertDialog.show();
     }
 
 }
