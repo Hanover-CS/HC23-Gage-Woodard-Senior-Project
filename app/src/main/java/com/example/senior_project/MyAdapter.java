@@ -1,10 +1,18 @@
+/**
+ * <summary> This class helps convert user information to ArrayList for displaying
+ *     <para>
+ *         Set lifting text in position for display
+ *         Get information from button ID from the user input
+ *     </para>
+ * </summary>
+ */
+
 package com.example.senior_project;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;

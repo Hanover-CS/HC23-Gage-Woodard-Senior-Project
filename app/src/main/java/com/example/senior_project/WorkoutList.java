@@ -1,3 +1,12 @@
+/**
+ * <summary> This class helps display data to recyclerView for the user.
+ *     <para>
+ *         Set the lifting data to new ArrayList
+ *         Display data to recycler for users to view data
+ *     </para>
+ * </summary>
+ */
+
 package com.example.senior_project;
 
 import android.database.Cursor;
